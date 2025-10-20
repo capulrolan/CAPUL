@@ -2,7 +2,7 @@
     define('DB_HOST', 'localhost');
     define('DB_USER', 'root');
     define('DB_PASSWORD', '');
-    define('DB_NAME', 'mariscaldb');
+    define('DB_NAME', 'capul');
 
     try {
         $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
@@ -25,3 +25,4 @@
         echo "<h4 style='color: green;'>Database has successfully connected.</h4>";
     }
 ?>
+
