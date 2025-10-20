@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHUPLAK - Log In</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">SP</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="login-btn">Log In</a></li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <main class="login-section">
+    <div class="login-box">
+      <h2>Log In to SHUPLAK</h2>
+      <form action="login.php" method="POST">
+        <div class="input-group">
+          <label for="full_name">Full Name</label>
+          <input type="text" id="full_name" name="full_name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="input-group">
+          <label for="user_password">Password</label>
+          <input type="password" id="user_password" name="user_password" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit" class="btn">Log In</button>
+<br></br>
+        <p class="register-text">Don’t have an account?</p>
+        <a href="register.html" class="register-btn">Register Here</a>
+      </form>
+    </div>
+  </main>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
